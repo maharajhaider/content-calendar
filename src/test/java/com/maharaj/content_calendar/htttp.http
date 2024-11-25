@@ -1,0 +1,40 @@
+### find all content
+GET /api/content HTTP/1.1
+Host: localhost:8080
+
+
+
+### create new content
+
+POST /api/content HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+    "id": 1,
+    "title": "my second",
+    "desc": "second desc",
+    "status": "COMPLETED",
+    "type": "PROJECT",
+    "dateCreated": "2024-11-24T18:43:16.427011",
+    "dateUpdated": null
+}
+
+### Update content
+PUT /api/content/2 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+    "id": 1,
+    "title": "my second",
+    "desc": "second desc",
+    "status": "COMPLETED",
+    "type": "PROJECT",
+    "dateCreated": "2024-11-24T18:43:16.427011",
+    "dateUpdated":  "2024-11-24T18:43:16.427011"
+}
+
+###Deleting content
+DELETE /api/content/1 HTTP/1.1
+Host: localhost:8080
