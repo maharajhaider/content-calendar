@@ -1,13 +1,16 @@
 package com.maharaj.content_calendar;
 
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ContentCalendarApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ContentCalendarApplication.class, args);
+		SpringApplication.run(Application.class, args);
+		
+
 	}
 
 }
